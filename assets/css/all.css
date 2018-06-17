@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+.clearfix::after{
+	content: ""; 
+	display: block;
+   clear: both;
+}
+/* reset done */
+
+/*header*/
+.header{   
+    background-image: url(../img/Hero.png);
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 380px;
+    padding: 0;
+    margin: 0
+}
+
+
+/* 行政區選擇 */
+.areaSelect{
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    max-width:452px;
+}
+
+
+/* 熱門行政區推薦 */
+.recommend{   
+    position: relative;
+    top:-50px;
+    width: 90%; 
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;   
+}
+.hotArea li{
+    display: inline-block;
+    background: #559AC8;
+    border-radius: 5px;
+    font-size: 20px;
+    max-width: 130px;
+}
+.hotArea li a{
+    display: block;    
+    font-size: 20px;
+    text-decoration: none;
+    color:#fff;
+}
+
+/* .hr-dashed{
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #559AC8;
+    width: 400px;
+    display: inline-block;
+}
+.hr-sec{
+    margin-left: 7%;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #559AC8;
+    display: inline-block;
+    margin-top: -50px;
+    position: relative;
+    top: -10px;
+    left: 35px;
+} */
+
+
+
+/* 內容顯示區 */
+.hotSpot .col-sm-6{
+    float:left;
+    margin-top: 3em;
+    width:50%;
+}
+.hotSpot .col-xs-12{
+    float:left;
+    margin-top: 2em;
+    width:100%;
+}
+.pic{
+    height: 250px;
+    overflow: hidden;
+}
+img{
+    width:100%;
+}
+.card h3{
+    color: #fff;
+    font-size: 24px;
+    float:left;
+    margin-left: 20px;
+}
+.card h4{
+    color: #fff;
+    font-size: 16px;
+    float:right;
+    margin-right: 20px;
+}
+.img-intro{ 
+    position: relative;
+    top:-30px;
+}
+
+/* 熱門景點資訊顯示時前面加icon */
+.card .caption p:nth-child(1)::before {
+    content: "  ";
+    background: url(../img/icons_clock.png) no-repeat center;
+    padding: 0 10px 0 20px; 
+}
+.card .caption p:nth-child(2)::before {
+    content: "  ";
+    background: url(../img/icons_pin.png) no-repeat center;
+    padding: 0 10px 0 20px;
+}
+.card .caption p:nth-child(3)::before {
+    content: "  ";
+    background: url(../img/icons_phone.png) no-repeat center;
+    padding: 0 10px 0 20px; 
+}
+.Ticke_tinfo{
+    float:right;
+}
+.Ticke_tinfo::before {
+    content: "  ";
+    background: url(../img/icons_tag.png) no-repeat center;
+    padding: 0 10px 0 20px; 
+}
+
+
+/* footer */
+footer{
+    background-color: #559AC8;
+    font-size:14px;
+}
